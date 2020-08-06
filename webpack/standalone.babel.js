@@ -16,6 +16,7 @@ const result = configBuilder(
     },
 
     output: {
+      globalObject: "typeof self !== 'undefined' ? self : this",
       library: "SwaggerUIStandalonePreset",
     },
   }
